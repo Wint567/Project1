@@ -535,7 +535,6 @@
   max-width: 1217px;
   margin: 0 auto;
   margin-top: 56px;
-  margin-bottom: 72px;
 }
 .table .table__menu {
   border-collapse: collapse;
@@ -632,6 +631,7 @@
   grid-row-gap: 56px;
   grid-column-gap: 33px;
   margin-bottom: 72px;
+  margin-top: 131px;
 }
 .questions .questions__menu .questions__item {
   display: flex;
