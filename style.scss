@@ -67,32 +67,40 @@
         gap: 25px;
         
         .dropbtn {
-            font-size: 16px;
             border: none;
             @include Roboto(16px, 400, 24px);
             }
             
             .dropdown {
-            position: relative;
-            display: inline-block;
+                position: relative;
+                display: inline-block;
             }
             
             .dropdown-content {
-            display: none;
-            position: absolute;
-            z-index: 3;
-            text-decoration-line: underline;
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 3;
+                left: -10px;
             }
             
             .dropdown-content a {
-            color: black;
-            padding: 12px 0;
-            text-decoration: none;
-            display: block;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                @include Roboto(16px, 400, 24px);
+            }
+            
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
             }
 
-           .dropdown:hover .dropdown-content {display: block;}
-        
         & .links__item{
             position: relative;
             display: inline-block;
@@ -609,6 +617,20 @@
                     margin-top: 21px;
                     margin-bottom: 21px;
                 }
+            }
+
+            .table__color-red-right{
+                border-right: 1px solid #F00;
+            }
+
+            .table__color-red{
+                border-right: 1px solid #F00;
+                border-top: 1px solid #F00;
+            }
+
+            .table__color-red1{
+                border-right: 1px solid #F00;
+                border-bottom: 1px solid #F00;
             }
         } 
     }
